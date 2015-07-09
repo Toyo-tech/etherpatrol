@@ -17,8 +17,12 @@ TEMPLATE = app
 
 SOURCES += main.cpp \
     IChecker.cpp \
-    MACChecker.cpp
+    MACChecker.cpp \
+    EtherCapture.cpp \
+    ICapture.cpp
 
 HEADERS += \
     IChecker.h \
-    MACChecker.h
+    MACChecker.h \
+    ICapture.h \
+    EtherCapture.h

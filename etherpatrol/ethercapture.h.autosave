@@ -1,0 +1,14 @@
+#ifndef ETHERCAPTURE
+#define ETHERCAPTURE
+#include<arpa/inet.h>
+
+
+class EtherCapture : public ICapture
+{
+public:
+    bool InitSocket();
+    uint8_t* GetPacket();    
+};
+
+#endif // ETHERCAPTURE
+

@@ -7,7 +7,7 @@ MACChecker::MACChecker()
 {
 }
 
-//check if parameter packet's MAC address is in whitelist or not.
+//check if packet's MAC address passed as argument is in whitelist or not.
 bool MACChecker::IsOK(uint8_t* packet){
 
     //extract ether header from packet
@@ -60,6 +60,7 @@ std::string MACChecker::GetCheckInformation(){
 }
 
 
+//check MAC address and set m_CheckInformation results when MAC address doesn't match.
 bool MACChecker::_IsInWhitelist(std::vector<MACAddr_t>* _whiteFrame,uint8_t _frame[ETHER_ADDR_LEN]){
 
     //create iterator
