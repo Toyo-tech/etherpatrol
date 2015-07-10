@@ -19,10 +19,26 @@ SOURCES += main.cpp \
     IChecker.cpp \
     MACChecker.cpp \
     EtherCapture.cpp \
-    ICapture.cpp
+    ICapture.cpp \
+    ICaptureFactory.cpp \
+    EtherCaptureFactory.cpp \
+    TestCaptureFactory.cpp \
+    TestCapture.cpp \
+    ICheckerFactory.cpp \
+    MACCheckerFactory.cpp \
+    TestCheckerFactory.cpp \
+    TestChecker.cpp
 
 HEADERS += \
     IChecker.h \
     MACChecker.h \
     ICapture.h \
-    EtherCapture.h
+    EtherCapture.h \
+    ICaptureFactory.h \
+    EtherCaptureFactory.h \
+    TestCaptureFactory.h \
+    TestCapture.h \
+    ICheckerFactory.h \
+    MACCheckerFactory.h \
+    TestCheckerFactory.h \
+    TestChecker.h
